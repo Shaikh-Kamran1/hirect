@@ -2,7 +2,7 @@ services:
   - type: web
     name: hirect-api
     env: docker
-    region: ohio
+    region: oregon
     plan: free
     dockerfilePath: ./backend/Dockerfile
     envVars:
