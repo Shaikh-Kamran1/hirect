@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: hirect-api
+    env: docker
+    region: ohio
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        scope: run
+      - key: DATABASE_USERNAME
+        scope: run
+      - key: DATABASE_PASSWORD
+        scope: run
+      - key: JWT_SECRET
+        scope: run
+      - key: PORT
+        value: "8080"
