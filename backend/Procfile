@@ -1,0 +1,1 @@
+web: java -jar target/job-portal-1.0.0.jar
